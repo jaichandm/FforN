@@ -31,6 +31,8 @@
         android:layout_marginTop="5dp"
         android:inputType="text"
         android:textSize="15sp"
+        android:textColor="@color/darkblue"
+        android:background="@color/sblue2"
         android:hint="@string/first_name"
         android:padding="12dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,6 +49,8 @@
         android:textSize="15sp"
         android:hint="@string/last_name"
         android:padding="12dp"
+        android:textColor="@color/darkblue"
+        android:background="@color/sblue2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registrationPage"
         android:autofillHints="name" />
@@ -62,6 +66,8 @@
         android:textSize="15sp"
         android:hint="@string/label_email"
         android:padding="12dp"
+        android:textColor="@color/darkblue"
+        android:background="@color/sblue2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etLastName"
         android:autofillHints="emailAddress" />
@@ -77,6 +83,8 @@
         android:layout_marginEnd="15dp"
         android:hint="@string/label_DOB"
         android:padding="12dp"
+        android:textColor="@color/darkblue"
+        android:background="@color/sblue2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
@@ -90,6 +98,8 @@
         android:textSize="15sp"
         android:hint="@string/enter_phone_number"
         android:padding="12dp"
+        android:textColor="@color/darkblue"
+        android:background="@color/sblue2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmail"
         android:autofillHints="phone" />
@@ -105,6 +115,8 @@
         android:textSize="15sp"
         android:hint="@string/label_address"
         android:padding="12dp"
+        android:textColor="@color/darkblue"
+        android:background="@color/sblue2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/etCity"
         app:layout_constraintTop_toBottomOf="@+id/etPhone" />
@@ -120,6 +132,8 @@
         android:hint="@string/label_city"
         android:textSize="15sp"
         android:padding="12dp"
+        android:textColor="@color/darkblue"
+        android:background="@color/sblue2"
         app:layout_constraintStart_toEndOf="@+id/etAddressLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPhone"/>
@@ -135,6 +149,8 @@
         android:hint="@string/label_state"
         android:textSize="15sp"
         android:padding="12dp"
+        android:textColor="@color/darkblue"
+        android:background="@color/sblue2"
         app:layout_constraintEnd_toStartOf="@+id/etCountry"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etAddressLine"/>
@@ -148,6 +164,8 @@
         android:hint="@string/label_country"
         android:textSize="15sp"
         android:padding="12dp"
+        android:textColor="@color/darkblue"
+        android:background="@color/sblue2"
         app:layout_constraintStart_toEndOf="@+id/etState"
         app:layout_constraintEnd_toStartOf="@+id/etZipcode"
         app:layout_constraintTop_toBottomOf="@+id/etAddressLine"/>
@@ -163,6 +181,8 @@
         android:hint="@string/label_zipcode"
         android:textSize="15sp"
         android:padding="12dp"
+        android:textColor="@color/darkblue"
+        android:background="@color/sblue2"
         app:layout_constraintStart_toEndOf="@+id/etCountry"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etAddressLine"/>
@@ -178,6 +198,8 @@
         android:hint="@string/label_username"
         android:textSize="15sp"
         android:padding="12dp"
+        android:textColor="@color/darkblue"
+        android:background="@color/sblue2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etZipcode"
@@ -194,6 +216,8 @@
         android:hint="@string/label_password"
         android:textSize="15sp"
         android:padding="12dp"
+        android:textColor="@color/darkblue"
+        android:background="@color/sblue2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etUsername"
@@ -210,19 +234,22 @@
         android:hint="@string/label_confirm_password"
         android:textSize="15sp"
         android:padding="12dp"
+        android:textColor="@color/darkblue"
+        android:background="@color/sblue2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
     <Button
         android:id="@+id/btnRegister"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:layout_marginEnd="35dp"
         android:layout_marginTop="5dp"
         android:text="@string/btn_register"
         android:textSize="15sp"
+        android:backgroundTint="@color/darkblue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etConfirmPassword"/>
