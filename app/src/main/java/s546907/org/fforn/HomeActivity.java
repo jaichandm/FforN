@@ -7,13 +7,14 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import com.parse.ParseUser;
 import androidx.appcompat.app.AlertDialog;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private Button logoutBtn;
+    private ImageView logoutBtn;
     private ProgressDialog progressDialog;
 
     @Override
@@ -22,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         progressDialog = new ProgressDialog(HomeActivity.this);
-        logoutBtn = (Button)findViewById(R.id.btnLogout);
+        logoutBtn = findViewById(R.id.ivlogout);
 
         logoutBtn.setOnClickListener(v ->{
             progressDialog.show();
